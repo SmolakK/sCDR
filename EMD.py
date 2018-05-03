@@ -15,12 +15,9 @@ for num in range(24):
     prob2 = []
     x = []
     y = []
-    limit = 0
     with open(path,'r') as hour10:
         hour10.next()
         for line in hour10:
-            if limit > 800:
-                break
             line = line.split(',')
             x.append(float(line[::-1][0]))
             y.append(float(line[::-1][1]))
