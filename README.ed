@@ -1,0 +1,18 @@
+This repository contains sCDR model for Sythetic Call Detail Records generation. 
+-------------------------------------------------------------
+This model is open access implemented in Python using QGIS API.
+
+
+Copy main directory to your qgis python plugins directory.
+
+Inputs folder contains data used for simulation:
+1. home_locations -> randomized home_locations using HomeDistribution,
+2. work_locations -> randomized work_locations using WorkDistribution,
+3. prob_dis -> HWOstacked distribution - circadian rhythm,
+4. pattern -> non-spatial sCDR created using calling patterns.
+
+Generated Data folder includes spatial sCDRs. These are:
+1. 15_15_120_id0_positions_prob_dist - original data
+2. 15_15_120_id0_positions_nospred_prob_dist - sCDR without activity space
+3. 15_15_120_id0_positions_Work7-16 - sCDR full algorithm
+4. 15_15_120_id0_positions_nospred_prob_WHERE2 - WHERE2 dataset
